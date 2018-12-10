@@ -16,14 +16,63 @@ Game Design:
               - Players start with 5 ships
               ? Number of ships depended on board size?
               ? Mines scattered around map, and if you place a ship on here, you can end up damaging a part of your ship
+              -Roll dice for user to go first
+              -Name
+              -Score
+                ? Track points for damaged and destroyed ships
+                ? Final scoring is based on number of turns to destory all ships
+              -Turn
+                ? max 60 second turn
+              -"Gui" of ships in service for tracking
+                        -if ship is destroyed, mark an x
+                        -if ship is damaged, change portion to red
           4. Ships
-                # 	Class of ship 	Size
-                1 	Carrier 	    5
-                2 	Battleship 	    4
-                3 	Cruiser 	    3
-                4 	Submarine 	    3
-                5 	Destroyer 	    2 
-                ?       Minesweeper         1
-          5.
-          6.
-          7.
+                # 	Class of ship   Size
+                1 	Carrier 	5
+                2 	Battleship 	4      
+                3 	Cruiser 	3
+                4 	Submarine 	3
+                5 	Destroyer 	2 
+                ?       Minesweeper     1
+          
+          5. Battle System:
+                - User chooses coordinates to fire
+                        -Check for input
+                                ex. A10
+                                ex. F7
+                ? Based on class of ship and the number of ships, can determine the number of shots a player can take
+                ? Ships can move based on class of ships and fuel 
+                ? Ship classes can play a specific roll
+                        1. Carrier
+                                ? Role: Support
+                                        -Supply fuel to move
+                                ? Move: 2 Spaces
+                                ? Fuel Cost 5*size
+                                
+                        2. Frigates
+                                ? Role: Attack
+                                        -perform anti-submarine warfare for carrier and expeditionary strike groups and provide armed escort for supply convoys and merchant shipping
+                                        -damage x2 on anti-submarine
+                                ? Move: 4 spaces
+                        3. Cruiser
+                                ? Role: Attack
+                                        -Damage type ship x2
+                                ? Move: 3 spaces
+                                
+                        4. Submarine
+                                ? Role: Support/Recon
+                                       - Able to view +4 in any direction of unit
+                                       -Damage x2 on any ship except destroyer
+                                ? Move: 5 spaces
+                        5. Destroyer
+                                ? Role: Attack
+                                        -Performance in anti-air, anti-submarine, anti-ship,
+                                        -Damage x1.5 on any ship
+                                ? Move: 4 spaces
+                                
+                        ?. Minesweeper
+                                ? Role: Mine detector
+                                        -Detects mines only, doesn't account for number of shots
+                                ? Move: 6 spaces 
+          6. TBD
+          7. TBD
