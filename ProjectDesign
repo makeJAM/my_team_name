@@ -1,15 +1,29 @@
-Battleship Game Design Prokect
+                                                Battleship Game Design Project
+
+Keys:
+- Implementation
+? Possible Implementation
+
 
 Game Description:
     Two players try to find the other player’s ship placement and shoot down their ship.
+    ? Allow the user to move one ship after
 
 Game Design:
-  1. Server
-      One player
-  2. Client
-      2nd Player
-
-
-
-
-
+          1. Server
+          2. Client
+          3. Board
+              - Players start with 5 ships
+              ? Number of ships depended on board size?
+              ? Mines scattered around map, and if you place a ship on here, you can end up damaging a part of your ship
+          4. Ships
+                # 	Class of ship 	Size
+                1 	Carrier 	    5
+                2 	Battleship 	    4
+                3 	Cruiser 	    3
+                4 	Submarine 	    3
+                5 	Destroyer 	    2 
+                ?       Minesweeper         1
+          5.
+          6.
+          7.
