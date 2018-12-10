@@ -11,18 +11,27 @@ Game Description:
 
 Game Design:
           1. Server
+                -1st player hosts the server
           2. Client
+                -2nd player connects to the server
           3. Board
               - Players start with 5 ships
+              
               ? Number of ships depended on board size?
+              
               ? Mines scattered around map, and if you place a ship on here, you can end up damaging a part of your ship
-              -Roll dice for user to go first
+              
+              -Roll dice to decide who goes first/graphic flip coin to see who goes first
+              
               -Name
+                -Ask for user name
               -Score
                 ? Track points for damaged and destroyed ships
                 ? Final scoring is based on number of turns to destory all ships
+                
               -Turn
                 ? max 60 second turn
+                
               -"Gui" of ships in service for tracking
                         -if ship is destroyed, mark an x
                         -if ship is damaged, change portion to red
@@ -32,7 +41,7 @@ Game Design:
                 2 	Battleship 	4      
                 3 	Cruiser 	3
                 4 	Submarine 	3
-                5 	Destroyer 	2 
+                5 	Destroyer 	2
                 ?       Minesweeper     1
           
           5. Battle System:
@@ -40,14 +49,15 @@ Game Design:
                         -Check for input
                                 ex. A10
                                 ex. F7
-                ? Based on class of ship and the number of ships, can determine the number of shots a player can take
-                ? Ships can move based on class of ships and fuel 
+                ? Ships can move based on class of ships and take account the fuel and spaces
+                        ? possible that ships can crash with each other
+                        ? random NPC
+                        
                 ? Ship classes can play a specific roll
                         1. Carrier
                                 ? Role: Support
                                         -Supply fuel to move
                                 ? Move: 2 Spaces
-                                ? Fuel Cost 5*size
                                 
                         2. Frigates
                                 ? Role: Attack
@@ -74,5 +84,27 @@ Game Design:
                                 ? Role: Mine detector
                                         -Detects mines only, doesn't account for number of shots
                                 ? Move: 6 spaces 
-          6. TBD
-          7. TBD
+                                
+          6. Ship Class:
+                1. Ship Name:
+                        ?User gets to name the ship
+                2. Ship Role:
+                        ? Based on ship class
+                        ? Can have multiple support roles
+                                ex. Mine detector, attack, recon, support, supply
+                3. Ship HP
+                        ? Health of ship
+                4. Ship movement
+                        ? Amount of spaces a ship can move
+                5. Ship attack
+                        ? The amount of damage a ship can cause
+                6. Ship fuel
+                        ? The number of fuel the ship has before needing to resupply
+                        ? Fuel is deducted on the bases of ship's movement
+                7. Ship class
+                        ? Ship class identifier
+                                ex. Destroyer, Minesweeper, Carrier
+                 ?8. Ship Captain:
+                        ? Just a label and rank
+                
+          7. GUI
